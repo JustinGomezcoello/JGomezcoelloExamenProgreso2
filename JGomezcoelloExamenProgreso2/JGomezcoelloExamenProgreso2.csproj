@@ -68,10 +68,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="JGomezcoelloGrid.xaml">
+	  <MauiXaml Update="Views\JGomezcoelloGrid.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="JGomezcoelloRecarga.xaml">
+	  <MauiXaml Update="Views\JGomezcoelloRecarga.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
