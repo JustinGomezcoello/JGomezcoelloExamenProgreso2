@@ -4,23 +4,23 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:JGomezcoelloExamenProgreso2"
-    Title="JGomezcoelloExamenProgreso2">
+    Title="Justin Gomezcoello">
 
-    <FlyoutItem Icon="icon_notes.png" FlyoutDisplayOptions="AsMultipleItems" >
+    <FlyoutItem Icon="navegar.png" FlyoutDisplayOptions="AsMultipleItems" >
 
-        <Tab Title="Notes" Icon="icon_notes.png">
+        <Tab Title="Recarga Telefonica" Icon="telefono.png">
             <ShellContent
-        Title="Notes"
-        ContentTemplate="{DataTemplate views:AllNotesPage}"
-        Icon="icon_notes.png" />
+        Title="Recarga Telefonica"
+        ContentTemplate="{DataTemplate local:JGomezcoelloRecarga}"
+        Icon="telefono.png" />
         </Tab>
 
 
-        <Tab Title="Sobre mi" Icon="icon_about.png">
+        <Tab Title="GRID" Icon="navegar.png">
             <ShellContent
-        Title="About"
-        ContentTemplate="{DataTemplate views:AboutPage}"
-        Icon="icon_about.png" />
+        Title="GRID"
+        ContentTemplate="{DataTemplate local:JGomezcoelloGrid}"
+        Icon="navegar.png" />
         </Tab>
     </FlyoutItem>
 
