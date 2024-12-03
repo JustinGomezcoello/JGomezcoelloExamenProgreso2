@@ -14,7 +14,7 @@ public partial class JGomezcoelloRecarga : ContentPage
         InitializeComponent();
         Recargas = new Recarga();
         BindingContext = Recargas;
-       
+        CargarUltimaRecarga();
     }
 
     private void Recargar_Clicked(object sender, EventArgs e)
@@ -32,19 +32,30 @@ public partial class JGomezcoelloRecarga : ContentPage
         // Agregar la nueva recarga al archivo
         File.AppendAllText(filePath, nuevaRecarga);
 
-        // Imprimir la ruta en la terminal
+        // Imprimir la ruta en la terminal para saber en donde se guarda
         System.Diagnostics.Debug.WriteLine($"Archivo guardado en: {filePath}");
 
-        // Mostrar confirmación
+        // confirmación
         DisplayAlert("Éxito", "Recarga realizada con éxito.", "OK");
 
         // Actualizar manualmente el Label de última recarga
         jgomezcoello_labelUltimaRecarga.Text = nuevaRecarga;
 
-        // Limpiar los campos de entrada
+        // Limpiar los campos de entrada para volver a ingresar un nuevo dato
         jgomezcoello_entryTelefono.Text = string.Empty;
         jgomezcoello_entryNombre.Text = string.Empty;
     }
 
-  
+    private void CargarUltimaRecarga()
+    {
+        string filePath = Path.Combine(FileSystem.AppDataDirectory, FileName);
+        if (File.Exists(filePath))
+        {
+            Recargas.UltimaRecarga = File.ReadAllText(filePath);
+        }
+        else
+        {
+            Recargas.UltimaRecarga = "No hay recargas previas.";
+        }
+    }
 }
