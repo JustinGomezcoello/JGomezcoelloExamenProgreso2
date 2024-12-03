@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="JGomezcoelloExamenProgreso2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:JGomezcoelloExamenProgreso2"
+    Title="JGomezcoelloExamenProgreso2">
+
+    <FlyoutItem Icon="icon_notes.png" FlyoutDisplayOptions="AsMultipleItems" >
+
+        <Tab Title="Notes" Icon="icon_notes.png">
+            <ShellContent
+        Title="Notes"
+        ContentTemplate="{DataTemplate views:AllNotesPage}"
+        Icon="icon_notes.png" />
+        </Tab>
+
+
+        <Tab Title="Sobre mi" Icon="icon_about.png">
+            <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate views:AboutPage}"
+        Icon="icon_about.png" />
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>
