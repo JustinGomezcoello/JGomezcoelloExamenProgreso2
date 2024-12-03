@@ -14,20 +14,20 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <!-- Primera Caja roja -->
-        <BoxView x:Name="jgomezcoello_boxViewRed" Color="Red" />
+
+        <BoxView  x:Name="jgomezcoello_boxView1"  Style="{StaticResource WhiteLabelStyle}" CornerRadius="10" Margin="5"  />
         <Label x:Name="jgomezcoello_label1" Text="Cristian" Style="{StaticResource BlackLabelStyle}" />
 
-        <!-- Segunda Caja azul -->
-        <BoxView x:Name="jgomezcoello_boxViewBlue" Grid.Column="1" Color="Blue" />
-        <Label x:Name="jgomezcoello_label2" Grid.Column="1" Text="Justin" Style="{StaticResource WhiteLabelStyle}" />
 
-        <!-- Abajo de Caja roja existe Caja naranja -->
-        <BoxView x:Name="jgomezcoello_boxViewOrange" Grid.Row="1" Color="Orange" />
-        <Label x:Name="jgomezcoello_label3" Grid.Row="1" Text="Gomezcoello" Style="{StaticResource GreenLabelStyle}" />
+        <BoxView x:Name="jgomezcoello_boxView2" Grid.Column="1" Style="{StaticResource WhiteLabelStyle}" CornerRadius="10" Margin="5"  />
+        <Label x:Name="jgomezcoello_label2" Grid.Column="1" Text="Justin"  Style="{StaticResource BlackLabelStyle}" />
 
-        <!-- Abajo de Caja azul existe Caja negra -->
-        <BoxView x:Name="jgomezcoello_boxViewBlack" Grid.Row="1" Grid.Column="1" Color="Black" />
-        <Label x:Name="jgomezcoello_label4" Grid.Row="1" Grid.Column="1" Text="Londoño" Style="{StaticResource YellowLabelStyle}" />
+
+        <BoxView x:Name="jgomezcoello_boxView3" Grid.Row="1" Style="{StaticResource WhiteLabelStyle}" CornerRadius="10" Margin="5"  />
+        <Label x:Name="jgomezcoello_label3" Grid.Row="1" Text="Gomezcoello" FontAttributes="Bold" Style="{StaticResource RedLabelStyle}" />
+
+
+        <BoxView x:Name="jgomezcoello_boxView4" Grid.Row="1" Grid.Column="1" Style="{StaticResource WhiteLabelStyle}" CornerRadius="10" Margin="5"  />
+        <Label x:Name="jgomezcoello_label4" Grid.Row="1" Grid.Column="1" Text="Londoño" FontAttributes="Bold" Style="{StaticResource RedLabelStyle}" />
     </Grid>
 </ContentPage>

@@ -7,17 +7,17 @@
 
         
         <Label x:Name="jgomezcoello_labelTelefono" Text="Ingrese el número de teléfono:" FontAttributes="Bold" />
-        <Entry x:Name="jgomezcoello_entryTelefono" T Placeholder="1234567891" Keyboard="Numeric" />
+        <Entry x:Name="jgomezcoello_entryTelefono" Text="{Binding Telefono}" Placeholder="1234567891" Keyboard="Numeric" />
 
         
         <Label x:Name="jgomezcoello_labelNombre" Text="Ingrese el nombre de quien realiza la recarga:" FontAttributes="Bold" />
-        <Entry x:Name="jgomezcoello_entryNombre"  Placeholder="Nombre...." />
+        <Entry x:Name="jgomezcoello_entryNombre" Text="{Binding Nombre}" Placeholder="Nombre...." />
 
        
-        <Label x:Name="jgomezcoello_labelUltimaRecarga"  FontAttributes="Italic" />
+        <Label x:Name="jgomezcoello_labelUltimaRecarga" Text="{Binding UltimaRecarga}" FontAttributes="Italic" />
 
         
-        <Button x:Name="jgomezcoello_btnRecargar" Text="Recargar" Clicked="Recargar_Clicked" BackgroundColor="Black" TextColor="Red" />
+        <Button x:Name="jgomezcoello_btnRecargar" Text="Recargar"  BackgroundColor="Black" TextColor="Red" />
 
     </StackLayout>
 </ContentPage>
