@@ -2,11 +2,32 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="JGomezcoelloExamenProgreso2.JGomezcoelloGrid"
-             Title="JGomezcoelloGrid">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Justin Gomezcoello">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!-- Primera Caja roja -->
+        <BoxView x:Name="jgomezcoello_boxViewRed" Color="Red" />
+        <Label x:Name="jgomezcoello_label1" Text="Cristian" Style="{StaticResource BlackLabelStyle}" />
+
+        <!-- Segunda Caja azul -->
+        <BoxView x:Name="jgomezcoello_boxViewBlue" Grid.Column="1" Color="Blue" />
+        <Label x:Name="jgomezcoello_label2" Grid.Column="1" Text="Justin" Style="{StaticResource WhiteLabelStyle}" />
+
+        <!-- Abajo de Caja roja existe Caja naranja -->
+        <BoxView x:Name="jgomezcoello_boxViewOrange" Grid.Row="1" Color="Orange" />
+        <Label x:Name="jgomezcoello_label3" Grid.Row="1" Text="Gomezcoello" Style="{StaticResource GreenLabelStyle}" />
+
+        <!-- Abajo de Caja azul existe Caja negra -->
+        <BoxView x:Name="jgomezcoello_boxViewBlack" Grid.Row="1" Grid.Column="1" Color="Black" />
+        <Label x:Name="jgomezcoello_label4" Grid.Row="1" Grid.Column="1" Text="Londoño" Style="{StaticResource YellowLabelStyle}" />
+    </Grid>
 </ContentPage>
